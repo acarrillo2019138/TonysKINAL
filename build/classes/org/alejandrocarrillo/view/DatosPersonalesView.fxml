@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="897.0" style="-fx-background-color: #d17519;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alejandrocarrillo.controller.DatosPersonalesController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="669.0" prefWidth="855.0" style="-fx-background-color: #FF8000;">
+         <effect>
+            <Shadow color="#cd9650" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </Pane>
+      <Pane layoutX="25.0" layoutY="21.0" prefHeight="669.0" prefWidth="349.0" style="-fx-background-color: #d1a319;">
+         <effect>
+            <Shadow color="#cdb12654" height="0.0" radius="20.49" width="83.96" />
+         </effect>
+      </Pane>
+      <Pane layoutX="369.0" layoutY="13.0" prefHeight="669.0" prefWidth="516.0" style="-fx-background-color: #d1a319;">
+         <effect>
+            <Shadow color="#ed720745" />
+         </effect>
+         <opaqueInsets>
+            <Insets right="5.0" />
+         </opaqueInsets>
+      </Pane>
+      <Label layoutX="390.0" layoutY="33.0" prefHeight="71.0" prefWidth="484.0" text="Datos del Programador" textFill="#002d4d">
+         <font>
+            <Font name="Times New Roman Italic" size="49.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="418.0" fitWidth="254.0" layoutX="61.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/ale.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="214.0" fitWidth="246.0" layoutX="692.0" layoutY="463.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fuego.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="417.0" layoutY="179.0" prefHeight="71.0" prefWidth="192.0" text="Alejandro" textAlignment="JUSTIFY" textFill="#04375d">
+         <font>
+            <Font name="Times New Roman Italic" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="248.0" prefHeight="71.0" prefWidth="279.0" text="Carrillo Garcia" textFill="#04375d">
+         <font>
+            <Font name="Times New Roman Italic" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="410.0" layoutY="321.0" prefHeight="71.0" prefWidth="408.0" text="Técnico en Informática" textFill="#04375d">
+         <font>
+            <Font name="Times New Roman Italic" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="387.0" prefHeight="71.0" prefWidth="192.0" text="IN5DV" textAlignment="JUSTIFY" textFill="#04375d">
+         <font>
+            <Font name="Times New Roman Italic" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="446.0" prefHeight="71.0" prefWidth="335.0" text="acarrillo-2019138@kinal.edu.gt" textAlignment="JUSTIFY" textFill="#0670bc">
+         <font>
+            <Font name="Times New Roman Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="524.0" prefHeight="71.0" prefWidth="170.0" text="+502 32854800" textAlignment="JUSTIFY" textFill="#0670bc">
+         <font>
+            <Font name="Times New Roman Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="440.0" prefHeight="71.0" prefWidth="320.0" text="CCNA1 __ CCNA2" textFill="#04375d">
+         <font>
+            <Font name="Times New Roman Italic" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="411.0" layoutY="498.0" prefHeight="71.0" prefWidth="192.0" text="MySQL " textAlignment="JUSTIFY" textFill="#04375d">
+         <font>
+            <Font name="Times New Roman Italic" size="41.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="706.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="706.0" layoutX="892.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="706.0" layoutX="887.0" stroke="BLACK" strokeType="INSIDE" width="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="706.0" layoutX="881.0" stroke="BLACK" strokeType="INSIDE" width="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="706.0" layoutX="7.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="706.0" layoutX="13.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="5.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="897.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="5.0" layoutY="701.0" stroke="BLACK" strokeType="INSIDE" width="897.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="-1.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="897.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" width="897.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="-1.0" layoutY="695.0" stroke="BLACK" strokeType="INSIDE" width="897.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="2.0" layoutX="-1.0" layoutY="688.0" stroke="BLACK" strokeType="INSIDE" width="897.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="339.0" layoutX="61.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="8.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="339.0" layoutX="307.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="8.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="61.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="254.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="61.0" layoutY="70.0" stroke="BLACK" strokeType="INSIDE" width="254.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="61.0" layoutY="402.0" stroke="BLACK" strokeType="INSIDE" width="254.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="61.0" layoutY="396.0" stroke="BLACK" strokeType="INSIDE" width="254.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="339.0" layoutX="71.0" layoutY="66.0" stroke="BLACK" strokeType="INSIDE" width="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="339.0" layoutX="303.0" layoutY="66.0" stroke="BLACK" strokeType="INSIDE" width="2.0" />
+   </children>
+</AnchorPane>

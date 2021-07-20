@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="748.0" prefWidth="1113.0" style="-fx-background-color: #ce7018;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alejandrocarrillo.controller.EmpresaController">
+   <children>
+      <Label layoutX="394.0" layoutY="58.0" prefHeight="74.0" prefWidth="279.0" text="Empresas" textFill="#003143">
+         <font>
+            <Font name="Times New Roman Italic" size="66.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0a0000" height="2.17" radius="0.04249999999999998" spread="0.61" width="0.0" />
+         </effect>
+      </Label>
+      <Label layoutX="73.0" layoutY="152.0" prefHeight="39.0" prefWidth="244.0" text="Código Empresa" textFill="#003143">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="5.45" radius="1.6400000000000001" spread="0.61" width="3.11" />
+         </effect>
+         <font>
+            <Font name="Times New Roman Italic" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="210.0" prefHeight="39.0" prefWidth="244.0" text="Nombre  Empresa" textFill="#003143">
+         <font>
+            <Font name="Times New Roman" size="31.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="5.45" radius="1.6400000000000001" spread="0.61" width="3.11" />
+         </effect>
+      </Label>
+      <Label layoutX="73.0" layoutY="272.0" prefHeight="39.0" prefWidth="244.0" text="Dirección Empresa" textFill="#003143">
+         <font>
+            <Font name="Times New Roman" size="31.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#000103" height="5.45" radius="1.6400000000000001" spread="0.61" width="3.11" />
+         </effect>
+      </Label>
+      <Label layoutX="73.0" layoutY="329.0" prefHeight="39.0" prefWidth="244.0" text="Teléfono" textFill="#003143">
+         <font>
+            <Font name="Times New Roman Italic" size="31.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="5.45" radius="1.6400000000000001" spread="0.61" width="3.11" />
+         </effect>
+      </Label>
+      <TextField fx:id="txtCodigoEmpresa" editable="false" layoutX="331.0" layoutY="150.0" prefHeight="46.0" prefWidth="399.0" />
+      <TextField fx:id="txtNombreEmpresa" editable="false" layoutX="331.0" layoutY="211.0" prefHeight="46.0" prefWidth="627.0" />
+      <TextField fx:id="txtDireccionEmpresa" editable="false" layoutX="331.0" layoutY="270.0" prefHeight="46.0" prefWidth="627.0" />
+      <TextField fx:id="txtTelefono" editable="false" layoutX="331.0" layoutY="327.0" prefHeight="46.0" prefWidth="244.0" />
+      <TableView fx:id="tblEmpresas" layoutX="66.0" layoutY="390.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="213.0" prefWidth="981.0" stylesheets="@../resource/TableView.css">
+        <columns>
+          <TableColumn fx:id="colCodigoEmpresa" editable="false" prefWidth="129.0" resizable="false" text="Codigo Empresa" />
+            <TableColumn fx:id="colNombreEmpresa" editable="false" prefWidth="394.0" resizable="false" text="Nombre Empresa" />
+          <TableColumn fx:id="colDireccionEmpresa" editable="false" minWidth="0.0" prefWidth="313.0" resizable="false" text="Direccion Empresa" />
+            <TableColumn fx:id="colTelefonoEmpresa" editable="false" minWidth="0.0" prefWidth="143.0" resizable="false" text="Telefono" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="136.0" layoutY="631.0" mnemonicParsing="false" onAction="#nuevoo" prefHeight="39.0" prefWidth="144.0" text="Nuevo">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnEliminar" layoutX="368.0" layoutY="628.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="46.0" prefWidth="144.0" text="Eliminar">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnEditar" layoutX="596.0" layoutY="628.0" mnemonicParsing="false" onAction="#editar" prefHeight="46.0" prefWidth="144.0" text="Editar">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="btnReporte" layoutX="817.0" layoutY="628.0" mnemonicParsing="false" onAction="#generarReporte" prefHeight="46.0" prefWidth="144.0" text="Reporte">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="719.0" layoutX="38.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="719.0" layoutX="1063.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="5.0" layoutX="14.0" layoutY="47.0" stroke="BLACK" strokeType="INSIDE" width="1085.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="5.0" layoutX="13.0" layoutY="695.0" stroke="BLACK" strokeType="INSIDE" width="1085.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="748.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="8.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="748.0" layoutX="1105.0" stroke="BLACK" strokeType="INSIDE" width="8.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="8.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="1114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="8.0" layoutX="-1.0" layoutY="740.0" stroke="BLACK" strokeType="INSIDE" width="1114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="5.0" layoutX="14.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="1085.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="5.0" layoutX="13.0" layoutY="705.0" stroke="BLACK" strokeType="INSIDE" width="1085.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="719.0" layoutX="48.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="719.0" layoutX="1072.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="4.0" layoutX="-1.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" width="1114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="4.0" layoutX="-1.0" layoutY="732.0" stroke="BLACK" strokeType="INSIDE" width="1114.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="748.0" layoutX="12.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="748.0" layoutX="1096.0" stroke="BLACK" strokeType="INSIDE" width="4.0" />
+      <ImageView fitHeight="91.0" fitWidth="116.0" layoutX="958.0" layoutY="165.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fuego.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="91.0" fitWidth="91.0" layoutX="856.0" layoutY="61.0" onMouseClicked="#ventanaPresupuestos" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/money.png" />
+         </image></ImageView>
+      <ImageView fitHeight="91.0" fitWidth="99.0" layoutX="961.0" layoutY="61.0" onMouseClicked="#ventanaServicio" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/SERVICIO.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

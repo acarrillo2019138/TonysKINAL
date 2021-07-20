@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1321.0" style="-fx-background-color: #ce7018;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alejandrocarrillo.controller.EmpleadosController">
+   <children>
+      <ImageView fitHeight="103.0" fitWidth="130.0" layoutX="1189.0" layoutY="15.0" onMouseClicked="#ventanaTipoEmpleado" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fuego.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="92.0" layoutY="106.0" prefHeight="30.0" prefWidth="176.0" text="Codigo Empleado ">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="92.0" layoutY="172.0" prefHeight="30.0" prefWidth="174.0" text="Numero Empleado">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="238.0" prefHeight="30.0" prefWidth="188.0" text="Apellidos">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="299.0" prefHeight="30.0" prefWidth="150.0" text="Nombres">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblEmpleados" layoutX="29.0" layoutY="357.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="248.0" prefWidth="1266.0" stylesheets="@../resource/TableView.css">
+        <columns>
+          <TableColumn fx:id="colCodigoEmpleado" editable="false" prefWidth="132.0" resizable="false" text="CodigoEmpleado" />
+          <TableColumn fx:id="colNumeroEmpleado" editable="false" minWidth="0.0" prefWidth="107.0" resizable="false" text="No. Empleado" />
+            <TableColumn fx:id="colApellidosEmpleado" editable="false" prefWidth="224.0" resizable="false" text="Apellidos" />
+            <TableColumn fx:id="colNombresEmpleado" editable="false" prefWidth="159.0" resizable="false" text="Nombres" />
+            <TableColumn fx:id="colDireccionEmpleado" editable="false" prefWidth="236.0" resizable="false" text="Direccion" />
+            <TableColumn fx:id="colTelefonoEmpleado" editable="false" prefWidth="124.0" resizable="false" text="Telefono" />
+            <TableColumn fx:id="colGradoCocinero" editable="false" prefWidth="165.0" resizable="false" text="GradoCocinero" />
+            <TableColumn fx:id="colTipoEmpleado" editable="false" prefWidth="118.0" resizable="false" text="TipoEmpleado" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtCodigoEmpleado" layoutX="299.0" layoutY="106.0" prefHeight="31.0" prefWidth="225.0" />
+      <TextField fx:id="txtNumeroEmpleado" layoutX="299.0" layoutY="172.0" prefHeight="31.0" prefWidth="225.0" />
+      <TextField fx:id="txtApellidosEmpleado" layoutX="214.0" layoutY="238.0" prefHeight="31.0" prefWidth="310.0" />
+      <TextField fx:id="txtNombresEmpleado" layoutX="214.0" layoutY="299.0" prefHeight="31.0" prefWidth="310.0" />
+      <Label layoutX="686.0" layoutY="111.0" prefHeight="21.0" prefWidth="174.0" text="Direccion">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="686.0" layoutY="177.0" prefHeight="21.0" prefWidth="174.0" text="Telefono">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="686.0" layoutY="243.0" prefHeight="21.0" prefWidth="174.0" text="Grado Cocinero">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="686.0" layoutY="304.0" prefHeight="23.0" prefWidth="201.0" text="Codigo Tipo Empleado">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font></Label>
+      <TextField fx:id="txtDireccionEmpleado" layoutX="794.0" layoutY="109.0" prefHeight="31.0" prefWidth="407.0" />
+      <TextField fx:id="txtTelefonoEmpleado" layoutX="794.0" layoutY="172.0" prefHeight="31.0" prefWidth="407.0" />
+      <TextField fx:id="txtGradoCocinero" layoutX="848.0" layoutY="239.0" prefHeight="31.0" prefWidth="356.0" />
+      <ComboBox fx:id="cmbCodigoTipoEmpleado" layoutX="902.0" layoutY="300.0" prefHeight="31.0" prefWidth="302.0" />
+      <Button fx:id="btnNuevo" layoutX="34.0" layoutY="628.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="31.0" prefWidth="234.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="369.0" layoutY="628.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="31.0" prefWidth="234.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="707.0" layoutY="627.0" mnemonicParsing="false" onAction="#editar" prefHeight="31.0" prefWidth="234.0" text="Editar" />
+      <Button fx:id="btnReporte" layoutX="1032.0" layoutY="627.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="234.0" text="Reporte" />
+      <Label layoutX="494.0" layoutY="11.0" prefHeight="81.0" prefWidth="334.0" text="Empleados">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="71.0" />
+         </font>
+      </Label>
+      <Cylinder layoutX="186.0" layoutY="66.0" radius="0.77" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#044782" height="706.0" layoutY="-3.0" stroke="#044782" strokeType="INSIDE" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#044782" height="706.0" layoutX="1316.0" layoutY="-3.0" stroke="#044782" strokeType="INSIDE" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#044782" height="706.0" layoutX="9.0" layoutY="-3.0" stroke="#044782" strokeType="INSIDE" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#044782" height="706.0" layoutX="1307.0" layoutY="-3.0" stroke="#044782" strokeType="INSIDE" width="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#044782" height="7.0" layoutX="-1.0" stroke="#044782" strokeType="INSIDE" width="1321.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#044782" height="9.0" layoutX="-1.0" layoutY="691.0" stroke="#044782" strokeType="INSIDE" width="1321.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#044782" height="4.0" layoutX="-1.0" layoutY="10.0" stroke="#044782" strokeType="INSIDE" width="1321.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#044782" height="4.0" layoutY="681.0" stroke="#044782" strokeType="INSIDE" width="1321.0" />
+   </children>
+</AnchorPane>

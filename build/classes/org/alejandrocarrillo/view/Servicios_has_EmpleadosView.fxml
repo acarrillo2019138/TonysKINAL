@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1157.0" style="-fx-background-color: #ce7018;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alejandrocarrillo.controller.Servicios_has_EmpleadosController">
+   <children>
+      <Label layoutX="60.0" layoutY="168.0" prefHeight="30.0" prefWidth="242.0" text="Código Servicio_has_Empleados">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="219.0" prefHeight="30.0" prefWidth="206.0" text="Código de Servicios">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="60.0" layoutY="277.0" prefHeight="30.0" prefWidth="206.0" text="Código de Empleados">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="600.0" layoutY="168.0" prefHeight="30.0" prefWidth="206.0" text="Fecha del evento">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="600.0" layoutY="219.0" prefHeight="30.0" prefWidth="206.0" text="Hora del evento">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="600.0" layoutY="277.0" prefHeight="30.0" prefWidth="206.0" text="Lugar del evento">
+         <font>
+            <Font name="Times New Roman Bold" size="17.0" />
+         </font></Label>
+      <Label layoutX="415.0" layoutY="76.0" prefHeight="48.0" prefWidth="328.0" text="Servicio_has_Empleados">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLugarEvento" layoutX="737.0" layoutY="277.0" prefHeight="31.0" prefWidth="291.0" />
+      <TextField fx:id="txtHoraEvento" layoutX="737.0" layoutY="219.0" prefHeight="31.0" prefWidth="242.0" />
+      <GridPane fx:id="grpFechaEvento" layoutX="737.0" layoutY="169.0" prefHeight="30.0" prefWidth="206.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <ComboBox fx:id="cmbCodigoServicio" layoutX="311.0" layoutY="219.0" prefHeight="31.0" prefWidth="234.0" />
+      <ComboBox fx:id="cmbCodigoEmpleado" layoutX="311.0" layoutY="277.0" prefHeight="31.0" prefWidth="234.0" />
+      <TableView fx:id="tblServiciosHasEmpleados" layoutX="60.0" layoutY="403.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="1030.0" stylesheets="@../resource/TableView.css">
+        <columns>
+          <TableColumn fx:id="colcodHas" prefWidth="157.0" text="Código Servicio Has" />
+          <TableColumn fx:id="colCodigoServicio" prefWidth="127.0" text="Código Servicio" />
+            <TableColumn fx:id="colCodigoEmpleado" minWidth="0.0" prefWidth="146.0" text="Código Empleado" />
+            <TableColumn fx:id="colFechaEvento" prefWidth="151.0" text="Fecha de evento" />
+            <TableColumn fx:id="colHoraEvento" prefWidth="150.0" text="Hora del evento" />
+            <TableColumn fx:id="colLugarEvento" prefWidth="298.0" text="Lugar del evento" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="76.0" layoutY="326.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="55.0" prefWidth="175.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="341.0" layoutY="326.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="55.0" prefWidth="175.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="616.0" layoutY="326.0" mnemonicParsing="false" onAction="#editar" prefHeight="55.0" prefWidth="175.0" text="Editar" />
+      <Button fx:id="btnReporte" layoutX="899.0" layoutY="326.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="175.0" text="Reporte" />
+      <TextField fx:id="txtcodHas" layoutX="311.0" layoutY="168.0" prefHeight="31.0" prefWidth="234.0" />
+      <ImageView fitHeight="109.0" fitWidth="127.0" layoutX="1001.0" layoutY="25.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fuego.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

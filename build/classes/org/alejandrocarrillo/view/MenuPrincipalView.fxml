@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alejandrocarrillo.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="655.0" fitWidth="880.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/comid.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="373.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaEmpresas" text="Empresas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoEmpleado" text="Tipo Empleado" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventaTipoPlato" text="Tipo Plato" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventaProducto" text="Productos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Entidades de Union">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventaHas_Empleados" text="Servicios_has_Empleados" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventaProHasPlato" text="Productos_has_Platos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventaSerHasPlato" text="Servicios_has_Platos" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaDatosProgramador" text="About" />
+            </items>
+          </Menu>
+        </menus>
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuBar>
+   </children>
+</AnchorPane>

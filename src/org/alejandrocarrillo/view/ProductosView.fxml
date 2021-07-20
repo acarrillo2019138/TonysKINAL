@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="924.0" style="-fx-background-color: #ce7018;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alejandrocarrillo.controller.ProductosController">
+   <children>
+      <Label layoutX="61.0" layoutY="103.0" prefHeight="33.0" prefWidth="187.0" text="Código de Producto">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="149.0" prefHeight="33.0" prefWidth="187.0" text="Nombre de Producto">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="61.0" layoutY="193.0" prefHeight="33.0" prefWidth="199.0" text="Cantidad de Producto">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font></Label>
+      <TextField fx:id="txtcodProdu" layoutX="340.0" layoutY="103.0" prefHeight="33.0" prefWidth="521.0" />
+      <TextField fx:id="txtnameProduc" layoutX="340.0" layoutY="149.0" prefHeight="33.0" prefWidth="521.0" />
+      <TextField fx:id="txtcantProduc" layoutX="340.0" layoutY="193.0" prefHeight="33.0" prefWidth="521.0" />
+      <TableView fx:id="tblproductos" layoutX="34.0" layoutY="241.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="730.0" stylesheets="@../resource/TableView.css">
+        <columns>
+          <TableColumn fx:id="colcodProduc" prefWidth="151.0" text="Código de Producto" />
+          <TableColumn fx:id="colnameProduc" prefWidth="356.0" text="Nombre de Producto" />
+            <TableColumn fx:id="colcantProduc" prefWidth="222.0" text="Cantidad de Producto" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="777.0" layoutY="241.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="31.0" prefWidth="109.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="777.0" layoutY="300.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="31.0" prefWidth="109.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="777.0" layoutY="353.0" mnemonicParsing="false" onAction="#editar" prefHeight="31.0" prefWidth="109.0" text="Editar" />
+      <Button fx:id="btnReporte" layoutX="777.0" layoutY="410.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="109.0" text="Reporte" />
+      <Label layoutX="366.0" layoutY="39.0" prefHeight="48.0" prefWidth="193.0" text=" Productos">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="72.0" fitWidth="75.0" layoutX="837.0" layoutY="26.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fuego.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

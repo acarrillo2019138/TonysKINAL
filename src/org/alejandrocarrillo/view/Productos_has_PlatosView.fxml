@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="738.0" style="-fx-background-color: #ce7018;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alejandrocarrillo.controller.Productos_has_PlatosController">
+   <children>
+      <Label layoutX="222.0" layoutY="54.0" prefHeight="37.0" prefWidth="294.0" text="Productos_has_Platos">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="32.0" />
+         </font></Label>
+      <Label layoutX="99.0" layoutY="152.0" prefHeight="21.0" prefWidth="119.0" text="Platos">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbProdu" layoutX="318.0" layoutY="103.0" prefHeight="31.0" prefWidth="344.0" />
+      <ComboBox fx:id="cmbPlat" layoutX="318.0" layoutY="151.0" prefHeight="31.0" prefWidth="344.0" />
+      <TableView fx:id="tblHasPP" layoutX="34.0" layoutY="207.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="670.0" stylesheets="@../resource/TableView.css">
+        <columns>
+          <TableColumn fx:id="colCproductos" prefWidth="333.0" text="Código de Productos" />
+          <TableColumn fx:id="colCplatos" prefWidth="336.0" text="Código de Platos" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="88.0" fitWidth="88.0" layoutX="645.0" layoutY="18.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fuego.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="99.0" layoutY="104.0" prefHeight="21.0" prefWidth="119.0" text="Productos">
+         <font>
+            <Font name="Times New Roman Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

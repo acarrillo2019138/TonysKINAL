@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="1105.0" style="-fx-background-color: #ce7018;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alejandrocarrillo.controller.ServicioController">
+   <children>
+      <TableView fx:id="tblServicio" layoutX="31.0" layoutY="323.0" onKeyReleased="#seleccionarElementos" onMouseClicked="#seleccionarElementos" prefHeight="200.0" prefWidth="1039.0" stylesheets="@../resource/TableView.css">
+        <columns>
+          <TableColumn fx:id="colCodigoServicio" editable="false" prefWidth="117.0" resizable="false" text="Codigo Servicio" />
+          <TableColumn fx:id="colFechaServicio" editable="false" prefWidth="121.0" resizable="false" text="Fecha Servicio" />
+            <TableColumn fx:id="colTipoServicio" editable="false" prefWidth="182.0" resizable="false" text="Tipo Servicio" />
+            <TableColumn fx:id="colHoraServicio" editable="false" prefWidth="105.0" resizable="false" text="Hora Servicio" />
+            <TableColumn fx:id="colLugarServicio" editable="false" prefWidth="265.0" resizable="false" text="Lugar Servicio" />
+            <TableColumn fx:id="colTelefonoContacto" editable="false" prefWidth="124.0" resizable="false" text="Tel. Contacto" />
+            <TableColumn fx:id="colCodigoEmpresa" editable="false" prefWidth="123.0" resizable="false" text="Codigo Empresa" />
+        </columns>
+      </TableView>
+      <Label layoutX="466.0" layoutY="24.0" prefHeight="57.0" prefWidth="203.0" text="Servicios">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="50.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="86.0" fitWidth="110.0" layoutX="981.0" layoutY="14.0" onMouseClicked="#ventanaEmpresas" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fuego.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="96.0" prefHeight="34.0" prefWidth="167.0" text="CODIGO DE SERVICIO">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="150.0" prefHeight="34.0" prefWidth="167.0" text="FECHA DE SERVICIO">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="203.0" prefHeight="34.0" prefWidth="167.0" text="TIPO DE SERVICIO">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="280.0" layoutY="257.0" prefHeight="34.0" prefWidth="167.0" text="CODIGO DE EMPRESA">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="529.0" layoutY="96.0" prefHeight="34.0" prefWidth="155.0" text="HORA DE SERVICIO">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="528.0" layoutY="151.0" prefHeight="34.0" prefWidth="167.0" text="LUGAR DE SERVICIO">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="531.0" layoutY="204.0" prefHeight="34.0" prefWidth="155.0" text="TEL. CONTACTO">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="txtCodigoServicio" layoutX="223.0" layoutY="98.0" prefHeight="31.0" prefWidth="300.0" />
+      <TextField fx:id="txtTipoServicio" layoutX="223.0" layoutY="205.0" prefHeight="31.0" prefWidth="300.0" />
+      <TextField fx:id="txtHoraServicio" layoutX="689.0" layoutY="98.0" prefHeight="31.0" prefWidth="300.0" />
+      <TextField fx:id="txtLugarServicio" layoutX="689.0" layoutY="152.0" prefHeight="31.0" prefWidth="300.0" />
+      <TextField fx:id="txtTelefonoContacto" layoutX="689.0" layoutY="205.0" prefHeight="31.0" prefWidth="300.0" />
+      <GridPane fx:id="grpFechaServicio" layoutX="223.0" layoutY="151.0" prefHeight="34.0" prefWidth="300.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <ComboBox fx:id="cmbCodigoEmpresa" layoutX="458.0" layoutY="259.0" prefHeight="31.0" prefWidth="300.0" />
+      <Button fx:id="btnNuevo" layoutX="42.0" layoutY="549.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="44.0" prefWidth="240.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="302.0" layoutY="549.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="44.0" prefWidth="240.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="563.0" layoutY="548.0" mnemonicParsing="false" onAction="#editar" prefHeight="44.0" prefWidth="240.0" text="Editar" />
+      <Button fx:id="btnReporte" layoutX="821.0" layoutY="548.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="240.0" text="Reporte" />
+      <BorderPane prefHeight="633.0" prefWidth="6.0" style="-fx-background-color: green;" />
+      <BorderPane layoutX="1099.0" prefHeight="633.0" prefWidth="6.0" style="-fx-background-color: green;" />
+      <BorderPane layoutX="-1.0" prefHeight="7.0" prefWidth="1105.0" style="-fx-background-color: #044782;" />
+      <BorderPane layoutX="-2.0" layoutY="626.0" prefHeight="7.0" prefWidth="1105.0" style="-fx-background-color: #044782;" />
+      <BorderPane layoutX="10.0" prefHeight="633.0" prefWidth="6.0" style="-fx-background-color: #044782;" />
+      <BorderPane layoutX="1089.0" layoutY="-1.0" prefHeight="633.0" prefWidth="6.0" style="-fx-background-color: #044782;" />
+      <BorderPane layoutX="-1.0" layoutY="14.0" prefHeight="5.0" prefWidth="1105.0" style="-fx-background-color: green;" />
+      <BorderPane layoutY="614.0" prefHeight="5.0" prefWidth="1105.0" style="-fx-background-color: green;" />
+   </children>
+</AnchorPane>

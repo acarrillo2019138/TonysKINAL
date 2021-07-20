@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1030.0" style="-fx-background-color: #ce7018;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alejandrocarrillo.controller.PresupuestoController">
+   <children>
+      <Button fx:id="btnNuevo" layoutX="59.0" layoutY="607.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="63.0" prefWidth="161.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="310.0" layoutY="607.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="63.0" prefWidth="161.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="573.0" layoutY="607.0" mnemonicParsing="false" onAction="#editar" prefHeight="63.0" prefWidth="161.0" text="Editar" />
+      <Button fx:id="btnReporte" layoutX="818.0" layoutY="607.0" mnemonicParsing="false" onAction="#generarReporte" prefHeight="63.0" prefWidth="161.0" text="Reporte" />
+      <TableView fx:id="tblPresupuestos" layoutX="55.0" layoutY="349.0" onKeyReleased="#seleccionarElementos" onMouseClicked="#seleccionarElementos" prefHeight="200.0" prefWidth="924.0" stylesheets="@../resource/TableView.css">
+        <columns>
+          <TableColumn fx:id="colCodigoPre" editable="false" prefWidth="187.0" resizable="false" text="Codigo del Presupuesto" />
+          <TableColumn fx:id="colFecha" editable="false" prefWidth="237.0" resizable="false" text="Fecha de Solicitud" />
+            <TableColumn fx:id="colCantidadPre" editable="false" prefWidth="281.0" resizable="false" text="Cantidad de Presupuesto" />
+            <TableColumn fx:id="colCodEmpresa" editable="false" prefWidth="217.0" resizable="false" text="Codigo de Empresa" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblCodigoPre" layoutX="55.0" layoutY="148.0" prefHeight="40.0" prefWidth="208.0" text="Codigo de Presupuesto">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="254.0" prefHeight="40.0" prefWidth="224.0" text="Cantidad de Presupuesto ">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="525.0" layoutY="148.0" prefHeight="40.0" prefWidth="208.0" text="Fecha de Solicitud ">
+         <font>
+            <Font name="Times New Roman Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="525.0" layoutY="256.0" prefHeight="40.0" prefWidth="208.0" text="Codigo de Empresa">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCodigoPre" layoutX="280.0" layoutY="150.0" prefHeight="40.0" prefWidth="230.0" />
+      <TextField fx:id="txtCantidadPre" layoutX="279.0" layoutY="257.0" prefHeight="40.0" prefWidth="230.0" />
+      <Label layoutX="373.0" layoutY="57.0" prefHeight="63.0" prefWidth="305.0" text="Presupuestos">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="55.0" />
+         </font>
+      </Label>
+      <GridPane fx:id="grpfechaSolicitada" layoutX="726.0" layoutY="153.0" prefHeight="40.0" prefWidth="230.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <ComboBox fx:id="cmbCodEmpresa" layoutX="726.0" layoutY="257.0" prefHeight="40.0" prefWidth="230.0" />
+      <ImageView fitHeight="100.0" fitWidth="116.0" layoutX="869.0" layoutY="26.0" onMouseClicked="#ventanaEmpresas" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fuego.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

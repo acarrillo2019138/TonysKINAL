@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="813.0" prefWidth="701.0" style="-fx-background-color: #ce7018;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alejandrocarrillo.controller.TipoPlatoController">
+   <children>
+      <Label layoutX="56.0" layoutY="157.0" prefHeight="21.0" prefWidth="222.0" text="Código de Tipo de  Plato" textFill="#002a53">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="222.0" prefHeight="21.0" prefWidth="190.0" text="Descripción" textFill="#002a53">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="73.0" prefHeight="44.0" prefWidth="222.0" text="Tipo de Plato" textFill="#002a53">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="39.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtcodTipoPlato" layoutX="325.0" layoutY="146.0" prefHeight="44.0" prefWidth="325.0" />
+      <TextField fx:id="txtdescrip" layoutX="200.0" layoutY="211.0" prefHeight="44.0" prefWidth="450.0" />
+      <TableView fx:id="tbltipoPlato" layoutX="46.0" layoutY="372.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="397.0" prefWidth="616.0" stylesheets="@../resource/TableView.css">
+        <columns>
+          <TableColumn fx:id="colcodTplato" prefWidth="174.0" text="Código Tipo de Plato" />
+          <TableColumn fx:id="coldescrip" prefWidth="440.0" text="Descripción" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="56.0" layoutY="296.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="31.0" prefWidth="128.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="218.0" layoutY="296.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="31.0" prefWidth="128.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="378.0" layoutY="296.0" mnemonicParsing="false" onAction="#editar" prefHeight="31.0" prefWidth="128.0" text="Editar" />
+      <Button fx:id="btnReporte" layoutX="534.0" layoutY="296.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="128.0" text="Reporte" />
+      <ImageView fitHeight="66.0" fitWidth="86.0" layoutX="40.0" layoutY="51.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fuego.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="74.0" layoutX="597.0" layoutY="53.0" onMouseClicked="#ventaPlato" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/ese.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
